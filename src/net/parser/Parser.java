@@ -1,5 +1,6 @@
 package net.parser;
 
+import net.lexer.Lexer;
 import net.token.Token;
 
 public class Parser {
@@ -10,7 +11,8 @@ public class Parser {
 	 */
 	public Parser(String numericalFormula) {
 		System.out.println(numericalFormula);
-		Token[] tokens = Token.tokenize("k=b+(c*4+0.5)/4.0;");
+		Lexer lexer = new Lexer(numericalFormula);
+		Token[] tokens = lexer.getTokens();
 		System.out.println("token num : " + tokens.length);
 		for (Token token : tokens) {
 			System.out.println(token.getToken() + " : " + token.getType());
@@ -18,7 +20,7 @@ public class Parser {
 	}
 
 	public static void main(String[] args) {
-		new Parser("a=b+c");
+		new Parser("k=b+(c*4+0.5)/4.0;");
 	}
 
 }
