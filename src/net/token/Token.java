@@ -1,13 +1,13 @@
 package net.token;
 
 public class Token {
-	public final int TYPE_VARIABLE = 1;		//•Ï”
-	public final int TYPE_OPERATOR = 2;		//‰‰Zq
-	public final int TYPE_NUMBER = 3;		//”’l
-	public final int TYPE_SEMICOLON = 4;	//ƒZƒ~ƒRƒƒ“
+	public final int TYPE_VARIABLE = 1;		//å¤‰æ•°
+	public final int TYPE_OPERATOR = 2;		//æ¼”ç®—å­
+	public final int TYPE_NUMBER = 3;		//æ•°å­—
+	public final int TYPE_SEMICOLON = 4;	//ã‚»ãƒŸã‚³ãƒ­ãƒ³
 
-	private String token;	//”®’†‚Ì•¶š—ñ(ƒg[ƒNƒ“)
-	private int type;		//ƒg[ƒNƒ“Œ^
+	private String token;	//æ•°å¼ä¸­ã®ãƒˆãƒ¼ã‚¯ãƒ³
+	private int type;		//å‹
 	public Token(String token, int type) {
 		this.token = token;
 		this.type = type;

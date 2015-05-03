@@ -4,7 +4,7 @@ public class Parser {
 
 	/**
 	 *
-	 * @param numericalFormula : ”®‚Ì•¶š—ñD"a=b+c"‚È‚ÇD
+	 * @param numericalFormula : æ•°å¼ã®æ–‡å­—åˆ—ï¼"a=b+c"ãªã©ï¼
 	 */
 	public Parser(String numericalFormula) {
 		System.out.println(numericalFormula);
