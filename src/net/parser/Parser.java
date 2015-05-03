@@ -1,5 +1,7 @@
 package net.parser;
 
+import net.token.Token;
+
 public class Parser {
 
 	/**
@@ -8,10 +10,10 @@ public class Parser {
 	 */
 	public Parser(String numericalFormula) {
 		System.out.println(numericalFormula);
+		Token.tokenize("k=b+c");
 	}
 
 	public static void main(String[] args) {
-		System.out.println("hello, world!");
 		new Parser("a=b+c");
 	}
 
