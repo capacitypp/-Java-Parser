@@ -10,7 +10,11 @@ public class Parser {
 	 */
 	public Parser(String numericalFormula) {
 		System.out.println(numericalFormula);
-		Token.tokenize("k=b+c");
+		Token[] tokens = Token.tokenize("k=b+(c*4+0.5)/4.0;");
+		System.out.println("token num : " + tokens.length);
+		for (Token token : tokens) {
+			System.out.println(token.getToken() + " : " + token.getType());
+		}
 	}
 
 	public static void main(String[] args) {
