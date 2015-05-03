@@ -7,7 +7,7 @@ public class Token {
 	public final int TYPE_SEMICOLON = 4;	//セミコロン
 
 	private String token;	//数式中のトークン
-	private int type;		//型
+	private int type;		//トークン型
 	public Token(String token, int type) {
 		this.token = token;
 		this.type = type;
